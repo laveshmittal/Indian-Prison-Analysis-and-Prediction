@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app1</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app1/style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="container" align="center">
+        <img src = "{% static 'app1/ncrb.png' %}" width="120" height="150">
+    </div>
+<div class="container" align="center">
+    <form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+<p><input type="submit" value="Log in"></input> <button onclick="window.location.href='/'">Back</button></p></body>
+</div>
+
+
+
+</html>

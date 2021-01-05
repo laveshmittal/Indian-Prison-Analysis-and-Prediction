@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      {%load static%}
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="{%static 'app1/indianflag.jpg'%}" width="40" height="30" class="d-inline-block align-top" alt="">
+    Prison Analysis and Prediction
+  </a>
+</nav>
+<br><br><br>
+
+
+<div class="d-inline-flex p-2 bd-highlight"><h1 align="middle">Sentence period of prisoners</h1></div>
+
+<div class="container">
+<h4 align="middle">
+    <form action="sentencefunc" method="get">
+      <input list="statelist" name="statelist">
+      <datalist id="statelist">
+        <option value="A & N Islands">
+        <option value="Andhra Pradesh">
+        <option value="Arunachal Pradesh">
+        <option value="Assam">
+        <option value="Bihar">
+        <option value="Chandigarh">
+        <option value="Chhattisgarh">
+        <option value="D & N Haveli">
+        <option value="Daman & Diu">
+        <option value="Delhi">
+        <option value="Goa">
+        <option value="Gujarat">
+        <option value="Haryana">
+        <option value="Himachal Pradesh">
+        <option value="Jammu & Kashmir">
+        <option value="Jharkhand">
+          <option value="Karnataka">
+          <option value="Kerala">
+          <option value="Lakshadweep">
+          <option value="Madhya Pradesh">
+          <option value="Maharashtra">
+          <option value="Manipur">
+          <option value="Meghalaya">
+          <option value="Mizoram">
+          <option value="Nagaland">
+          <option value="Orissa">
+          <option value="Pondicherry">
+          <option value="Punjab">
+          <option value="Rajasthan">
+          <option value="Sikkim">
+          <option value="Tamil Nadu">
+          <option value="Tripura">
+          <option value="Uttar Pradesh">
+          <option value="Uttaranchal">
+          <option value="West Bengal">
+      </datalist>
+
+
+      <input list="yearlist" name="yearlist">
+      <datalist id="yearlist">
+        <option value="2001">
+        <option value="2002">
+        <option value="2003">
+        <option value="2004">
+        <option value="2005">
+        <option value="2006">
+        <option value="2007">
+        <option value="2008">
+        <option value="2009">
+        <option value="2010">
+        <option value="2011">
+        <option value="2012">
+        <option value="2013">
+
+      </datalist>
+
+
+
+
+
+      <input type="submit" class="btn btn-success">
+    </form>
+  </h4>
+</div>
+<p align="middle">
+<button onclick="window.location.href='/app1/onlyyear'" class="btn btn-danger">BACK</button>
+</p>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
